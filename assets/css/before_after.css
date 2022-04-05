@@ -1,0 +1,77 @@
+div#comparison { 
+  width:29vw;
+  height: 24vw;
+  overflow: hidden;
+  }
+div#comparison figure { 
+  background-image: url('../images/old1_img.jpg'); 
+  background-size: cover;
+  position: relative;
+  font-size: 0;
+  width: 100%; 
+  height: 100%;
+  margin: 0; 
+}
+div#comparison figure > img { 
+  position: relative;
+  width: 100%;
+}
+div#comparison figure div { 
+  background-image: url('../images/new1_img.jpg');
+  background-size: cover;
+  position: absolute;
+  width: 50%; 
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  overflow: hidden;
+  bottom: -4px;
+    height: 100%;
+}
+input[type=range]{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  position: relative;
+  top: -15rem; left: -9px;
+  background-color: transparent;
+  width: 104%; 
+}
+input[type=range]:focus { 
+  outline: none; 
+}
+input[type=range]:active { 
+  outline: none;  
+}
+
+input[type=range]::-moz-range-track { 
+  -moz-appearance:none;
+    height:15px;
+    width: 98%;
+    background-color: rgba(255,255,255,0.1); 
+    position: relative;
+    outline: none;    
+ }
+input[type=range]::active { 
+  border: none; 
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    width: 25px; height: 25px;   
+    background: #1e9ce5;
+	 border:6px solid rgba(225, 225, 225, 0.7);
+    border-radius: 50px;
+   }
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #1e9ce5;
+  border:6px solid rgba(225, 225, 225, 0.7);
+  border-radius: 50px;
+     }   
+input[type=range]:focus::-webkit-slider-thumb {
+    background: #1e9ce5;
+   }
+input[type=range]:focus::-moz-range-thumb {
+    background: #1e9ce5;
+   }
+   
